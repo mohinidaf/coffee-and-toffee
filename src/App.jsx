@@ -28,7 +28,10 @@ function App() {
 
       {/* Right Side */}
       <div className="right-section">
-
+      <div className="story-note">
+  <img src="https://i.pinimg.com/736x/1c/6d/bc/1c6dbc2f59a72d1536a06059c07bf88c.jpg" alt="camera" />
+  <p>Every support fuels a story!</p>
+</div>
         <Tabs
           activeTab={activeTab}
           setActiveTab={setActiveTab}

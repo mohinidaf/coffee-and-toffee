@@ -1,19 +1,36 @@
 import React from 'react'
-
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaGithub,
+  FaGlobe
+ } from "react-icons/fa";
+ 
+ import { FaXTwitter } from "react-icons/fa6";
 function ProfileCard() {
   return (
     <div className="profile-card">
 
-      <div className="cover-image"></div>
      
-      <div className="profile-image"></div>
+      <div className="profile-cover">
+  <img
+    src="https://www.shutterstock.com/image-vector/exotic-hand-drawn-flowers-seamless-260nw-2763246775.jpg"
+    alt="cover"
+  />
+
+  
+</div>
+    
+    
 
       <h2>Shubham N Datarkar</h2>
-      <p>Photographer & Creative Writer</p>
+      <h4 >Photographer & Creative Writer</h4>
 
       <p>
       Capturing stories through photography and sharing creativity with a supportive community.
       </p>
+
       <div className="profile-avatar">
   <div className="avatar-circle">
     <i className="fa-regular fa-user"></i>
@@ -23,24 +40,33 @@ function ProfileCard() {
     <i className="fa-solid fa-check"></i>
   </div>
 </div>
-      <div className="social-links">
-  <button><i className="fa-brands fa-instagram"></i> Instagram</button>
-  <button><i className="fa-brands fa-youtube"></i> YouTube</button>
-  <button><i className="fa-brands fa-facebook"></i> Facebook</button>
+ 
+<div className="social-row">
+  <a href="#" className="social-icon"><FaInstagram /></a>
+  <a href="#" className="social-icon"><FaXTwitter /></a>
+  <a href="#" className="social-icon"><FaLinkedinIn /></a>
+  <a href="#" className="social-icon"><FaYoutube /></a>
+  <a href="#" className="social-icon"><FaGithub /></a>
+  <a href="#" className="social-icon"><FaGlobe /></a>
 </div>
 
-      <p>📍 Nagpur, India</p>
+<p className="location">📍 Nagpur, Maharashtra</p>
+
+   
 
       <h4>❤️ 128 Supporters</h4>
 
       <div className="badges">
-  <span>🍬 245 Times <br /> Thank you for your support!</span>
+  <span>🍬 X 245 Times <br /> Thank you for your support!</span>
 
-  <div className="trophies">
-  <div className="trophy-item">🏆</div>
-  <div className="trophy-item">📸</div>
-  <div className="trophy-item">✍️</div>
-  <div className="trophy-item">💜</div>
+  <h3 className="trophy-title">✨ Trophies ✨</h3>
+
+<div className="trophies-row">
+  <div className="trophy-icon">🖼️</div>
+  <div className="trophy-icon">🏆</div>
+  <div className="trophy-icon">🎩</div>
+  <div className="trophy-icon">🖤</div>
+  <div className="trophy-icon">☕</div>
 </div>
 </div>
 
